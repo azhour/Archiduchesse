@@ -96,19 +96,150 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body
+{
+   font-family: Georgia,Times,"Times New Roman",serif;
+   font-size: 16px;
+   color: #777;
+   background-color: #e7e7e7;
+}
 
+/* Menu en haut à gauche */
 
+.nav li a
+{
+  border-radius: 5px;
+padding: 5px 14px;
+color: #444;
+position: relative;
+}
+ li
+{
+  display: inline-block;
+  list-style-type: none;
+}
 
+  li a
+ {
+   display: block;
+  text-decoration: none;
+  color: #777;
+ }
+ a
+ {
+   text-decoration: none;
+   color: #777;
+ }
 
+ .nav a:hover
+ {
+   background: grey;
+ }
+ .nav a:focus
+ {
+   background: grey;
+ }
 
+div
+{
+  display: flex;
+  justify-content: space-between;
+}
 
+svg
+{
+  width: 55px;
+}
+.purchase
+{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
 
+p{
+  text-align: center;
+color: #777;
+font-size: 14px;
+margin: 0;
+}
+.Content
+{
+  width: 900px;
+  margin: auto;
+  background: white;
+}
+.MainContent
+{
+  width: 96%;
+  background: #fff;
+margin-right: auto;
+margin-left: auto;
+padding-left: 10px;
+padding-right: 10px;
 
+}
 
+.HeaderMenu
+{
+  text-transform: none;
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+padding: 17px 10px;
+width: 100%;
 
+}
 
+.HeaderMenu ul
+{
+  background: #fff;
+border-bottom: 1px solid #e5e5e5;
+width: 100%;
+text-align: left;
 
+}
+/* pub pictures */
+.slideComments li
+{
+  display: block;
+  margin-left: -41px;
+}
+.soldes  /* comment pub picture sales */
+{
+  background: lightgrey;
+  border-radius: 5px;
+padding: 5px 14px;
+width: 22%;
+}
+.soldes:hover
+{
+  background:#d1c8c8;
+}
 
+.soldesEte
+{
+  font-size: xx-large;
+  color:black;
+}
+
+.soldesEte:hover
+{
+  color: inherit;
+}
+.Découvrir
+{
+  background: grey;
+  border-radius: 5px;
+  padding: 5px 14px;
+  width:20%;
+  color:white;
+}
+
+.Découvrir:hover
+{
+  background: #444;
+}
 
 
 
