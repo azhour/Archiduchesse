@@ -140,12 +140,6 @@ position: relative;
    background: grey;
  }
 
-div
-{
-  display: flex;
-  justify-content: space-between;
-}
-
 svg
 {
   width: 55px;
@@ -193,9 +187,9 @@ width: 100%;
 
 .HeaderMenu ul
 {
-  background: #fff;
+
 border-bottom: 1px solid #e5e5e5;
-width: 100%;
+width: 90%;
 text-align: left;
 
 }
@@ -210,7 +204,7 @@ text-align: left;
   background: lightgrey;
   border-radius: 5px;
 padding: 5px 14px;
-width: 22%;
+width: 18%;
 }
 .soldes:hover
 {
@@ -227,7 +221,7 @@ width: 22%;
 {
   color: inherit;
 }
-.Découvrir
+.Découvrir /* button découvrir */
 {
   background: grey;
   border-radius: 5px;
@@ -240,9 +234,35 @@ width: 22%;
 {
   background: #444;
 }
-
-
-
+.Contain
+{
+  background: white;
+  width: 98%;
+}
+.MainPicture
+{
+  width: 64%;
+}
+.figure
+{
+  margin: auto;
+}
+.rouge1
+{
+  background: url(../img/rouge-maison-close2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:30%;
+  height:300px;
+}
+.rouge1:hover
+{
+  background: url(../img/rouge-maison-close.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+  height: 300px;
+}
 
 /* ==========================================================================
    Helper classes
