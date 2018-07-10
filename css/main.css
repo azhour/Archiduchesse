@@ -1,0 +1,882 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body
+{
+   font-family: Georgia,Times,"Times New Roman",serif;
+   font-size: 16px;
+   color: #777;
+   background-color: #e7e7e7;
+}
+
+li a
+{
+ display: block;
+text-decoration: none;
+color: #777;
+}
+a
+{
+ text-decoration: none;
+ color: #777;
+}
+
+p{
+  text-align: center;
+color: #777;
+font-size: 14px;
+}
+.Contain
+{
+  width: 98%;
+  margin: auto;
+  background: white;
+}
+
+.ProductsContain
+{
+  display: block;
+}
+/* pub pictures  = div class MainPicture */
+
+.slideComments li
+{
+  display: block;
+  margin-left: -41px;
+}
+.soldes  /* comment pub picture sales */
+{
+  background: lightgrey;
+  border-radius: 5px;
+padding: 5px 14px;
+width: 100%;
+}
+.soldes:hover
+{
+  background:#d1c8c8;
+}
+
+.soldesEte
+{
+  font-size: x-large;
+  color:black;
+}
+
+.soldesEte:hover
+{
+  color: inherit;
+}
+.Découvrir /* button découvrir */
+{
+  background: grey;
+  border-radius: 5px;
+  padding: 5px 14px;
+  width:100%;
+  color:white;
+}
+
+.Découvrir:hover
+{
+  background: #444;
+}
+.Contain
+{
+  background: #fff;
+  width: 98%;
+}
+.MainPicture
+{
+  width: 49%;
+}
+.figure
+{
+  margin: auto;
+}
+
+/*div .Products = all fotos of Products*/
+.Products
+{
+  display: block;
+
+}
+
+.rouge1 /*picture of red closed house */
+{
+  background: url(../img/rouge-maison-close2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.rouge1:hover
+{
+  background: url(../img/rouge-maison-close.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.pink /* picture of pink raspberry socks */
+{
+  background: url(../img/chaussettes-rose-framboise1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.pink:hover
+{
+  background: url(../img/chaussettes-rose-framboise.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.pinkP /* foto of pink panthere*/
+{
+  background: url(../img/rose-panthere1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.pinkP:hover
+{
+  background: url(../img/rose-panthere.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.pinkL /* foto of pink little girl */
+{
+  background: url(../img/rose-petite-fille1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.pinkL:hover
+{
+  background: url(../img/rose-petite-fille.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.aubergine
+{
+  background: url(../img/aubergine1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.aubergine:hover
+{
+  background: url(../img/aubergine.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.prune
+{
+  background: url(../img/prune1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.prune:hover
+{
+  background: url(../img/prune.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.mauve
+{
+  background: url(../img/mauve-mure1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.mauve:hover
+{
+  background: url(../img/mauve-mure.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.purple
+{
+  background: url(../img/purple-rain1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:300px;
+}
+.purple:hover
+{
+  background: url(../img/purple-rain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+/* div Products2 */
+
+.Products2
+{
+  display: block;
+
+}
+
+  .mauveJ
+  {
+    background: url(../img/purple-rain1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .mauveJ:hover
+  {
+    background: url(../img/purple-rain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .violet
+  {
+    background: url(../img/chaussettes-violet-violine1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .violet:hover
+  {
+    background: url(../img/chaussettes-violet-violine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .violetU
+  {
+    background: url(../img/ultra-violet1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .violetU:hover
+  {
+    background: url(../img/ultra-violet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .violetV
+  {
+    background: url(../img/violet-violette1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .violetV:hover
+  {
+    background: url(../img/violet-violette.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blue
+  {
+    background: url(../img/bleu-ligne-131.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blue:hover
+  {
+    background: url(../img/bleu-ligne-13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueP
+  {
+    background: url(../img/bleu-petit-garcon1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueP:hover
+  {
+    background: url(../img/bleu-petit-garcon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueT
+  {
+    background: url(../img/bleu-turquoise1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueT:hover
+  {
+    background: url(../img/bleu-turquoise.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueC
+  {
+    background: url(../img/bleu-canard1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueC:hover
+  {
+    background: url(../img/bleu-canard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueG
+  {
+    background: url(../img/bleu-gitanes1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueG:hover
+  {
+    background: url(../img/bleu-gitanes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15%;
+    height: 300px;
+  }
+
+  .blueM
+  {
+    background: url(../img/bleu-monochrome1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:15%;
+    height:300px;
+  }
+  .blueM:hover
+  {
+    background: url(../img/bleu-monochrome.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueN
+  {
+    background: url(../img/bleu-de-nimes1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueN:hover
+  {
+    background: url(../img/bleu-de-nimes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueB
+  {
+    background: url(../img/blueB1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:300px;
+  }
+  .blueB:hover
+  {
+    background: url(../img/blueB.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .blueB[span]
+  {
+    background: rgba(245,245,245,0.9);
+position: absolute;
+left: 0;
+top: 0;
+width: 76px;
+height: 76px;
+border-radius: 50%;
+z-index: 90;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+  .mauveJ[.reduction]
+  {
+  Display: block;
+  position: absolute;
+  top: -0.7em;
+  left: 1.5em;
+  background: #FCE0DD;
+  font-size: 12px;
+  font-weight: bold;
+  color: #444;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* Description part */
+
+.description
+{
+  border-top: 1px solid #e5e5e5;
+  width: 99%;
+}
+
+.article
+{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+}
+
+h1,h2
+{
+  text-align: center;
+}
+
+article
+{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navTopLeft, .MenuRight
+{
+  display: none;
+}
+
+.mainNav
+{
+  display: flex;
+  vertical-align: middle;
+}
+
+.HeaderMenu
+{
+  display: none;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .mainNav
+  {
+    justify-content: space-between;
+  }
+  .navTopLeft, .MenuRight
+  {
+    display: inline-block;
+  }
+  .menuMobile
+  {
+    display: none;
+  }
+  .navTopLeft ul
+  {
+    display: flex;
+    list-style: none;
+  }
+
+  /* Menu navigation top left */
+
+  .navTopLeft nav li a
+  {
+    border-radius: 5px;
+  padding: 5px 14px;
+  color: #444;
+  position: relative;
+  }
+
+
+
+
+   .navTopLeft a:hover
+   {
+     background: grey;
+   }
+   .navTopLeft a:focus
+   {
+     background: grey;
+   }
+
+  .MenuRight
+  {
+    display: flex;
+  }
+
+  .HeaderMenu
+  {
+    display: inline-block;
+    text-transform: none;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 17px 10px;
+  width: 100%;
+
+  }
+
+  .HeaderMenu ul
+  {
+
+  border-bottom: 1px solid #e5e5e5;
+  width: 90%;
+  text-align: left;
+
+  }
+
+  .HeaderMenu li
+  {
+    list-style: none;
+  }
+
+  /*div .Products = all fotos of Products*/
+  .Products
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  }
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
