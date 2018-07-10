@@ -104,52 +104,6 @@ body
    background-color: #e7e7e7;
 }
 
-/* Menu navigation top left */
-
-.navTopLeft nav li a
-{
-  border-radius: 5px;
-padding: 5px 14px;
-color: #444;
-position: relative;
-}
- li
-{
-  display: inline-block;
-  list-style-type: none;
-}
-
-  li a
- {
-   display: block;
-  text-decoration: none;
-  color: #777;
- }
- a
- {
-   text-decoration: none;
-   color: #777;
- }
-
- .navTopLeft a:hover
- {
-   background: grey;
- }
- .navTopLeft a:focus
- {
-   background: grey;
- }
-/* icon div class purchase : store / panier */
-svg
-{
-  width: 55px;
-}
-.purchase
-{
-  width: 100%;
-  display: flex;
-  justify-content: right;
-}
 
 p{
   text-align: center;
@@ -158,43 +112,14 @@ font-size: 14px;
 }
 .Contain
 {
-  width: 900px;
+  width: 98%;
   margin: auto;
   background: white;
 }
-.MainContent
-{
-  width: 96%;
-  background: #fff;
-margin-right: auto;
-margin-left: auto;
-padding-left: 10px;
-padding-right: 10px;
 
-}
-
-.HeaderMenu
-{
-  text-transform: none;
-font-style: italic;
-font-weight: 500;
-font-size: 18px;
-padding: 17px 10px;
-width: 100%;
-
-}
-
-.HeaderMenu ul
-{
-
-border-bottom: 1px solid #e5e5e5;
-width: 90%;
-text-align: left;
-
-}
 .ProductsContain
 {
-  display: flex;
+  display: block;
 }
 /* pub pictures  = div class MainPicture */
 
@@ -671,11 +596,109 @@ article
   margin-right: 10px;
 }
 
-// Medium devices (tablets, 768px and up)
+.navTopLeft, .MenuRight
+{
+  display: none;
+}
+
+.mainNav
+{
+  display: flex;
+  vertical-align: middle;
+}
+
+.HeaderMenu
+{
+  display: none;
+}
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .mainNav
+  {
+    justify-content: space-between;
+  }
+  .navTopLeft, .MenuRight
+  {
+    display: inline-block;
+  }
+  .menuMobile
+  {
+    display: none;
+  }
+  .navTopLeft ul
+  {
+    display: flex;
+    list-style: none;
+  }
+
+  /* Menu navigation top left */
+
+  .navTopLeft nav li a
+  {
+    border-radius: 5px;
+  padding: 5px 14px;
+  color: #444;
+  position: relative;
+  }
+
+
+    li a
+   {
+     display: block;
+    text-decoration: none;
+    color: #777;
+   }
+   a
+   {
+     text-decoration: none;
+     color: #777;
+   }
+
+   .navTopLeft a:hover
+   {
+     background: grey;
+   }
+   .navTopLeft a:focus
+   {
+     background: grey;
+   }
+
+  .MenuRight
+  {
+    display: flex;
+  }
+
+  .HeaderMenu
+  {
+    display: inline-block;
+    text-transform: none;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 17px 10px;
+  width: 100%;
+
+  }
+
+  .HeaderMenu ul
+  {
+
+  border-bottom: 1px solid #e5e5e5;
+  width: 90%;
+  text-align: left;
+
+  }
+
+  .HeaderMenu li
+  {
+    list-style: none;
+  }
+
+  }
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
